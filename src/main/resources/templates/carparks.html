@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carparks</title>
+</head>
+<body>
+    <table>
+        <tr data-th-each="carpark: ${carparklist}">
+            <td data-th-text="*{carpark.id}"></td>
+            <td data-th-text="*{carpark.carpark}"></td>
+            <td data-th-text="*{carpark.category}"></td>
+            <td data-th-text="*{carpark.weekday1}"></td>
+            <td data-th-text="*{carpark.weekday2}"></td>
+            <td data-th-text="*{carpark.saturdayRate}"></td>
+            <td data-th-text="*{carpark.sundayPhRate}"></td>
+        </tr>
+    </table>
+</body>
+</html>
